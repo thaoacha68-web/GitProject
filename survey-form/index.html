@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Market Research Survey</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .survey {
+            width: 600px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            border: 1px solid #ccc;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .description {
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+        }
+
+        .question p {
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin: 8px 0;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 8px 18px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="survey">
+
+    <h1>Market Research Survey</h1>
+
+    <p class="description">
+        Please take a few moments to complete this satisfaction survey.
+    </p>
+
+    <form action="#" method="post">
+
+        <div class="question">
+            <p>What is your age range?</p>
+
+            <label>
+                <input type="radio" name="age" value="18-24">
+                18-24
+            </label>
+
+            <label>
+                <input type="radio" name="age" value="25-34">
+                25-34
+            </label>
+
+            <label>
+                <input type="radio" name="age" value="35-50">
+                35-50
+            </label>
+
+            <label>
+                <input type="radio" name="age" value="50+">
+                50+
+            </label>
+        </div>
+
+        <div class="question">
+            <p>What is your yearly income range?</p>
+
+            <label>
+                <input type="radio" name="income" value="0-25000">
+                $0 - $25,000
+            </label>
+
+            <label>
+                <input type="radio" name="income" value="25001-50000">
+                $25,001 - $50,000
+            </label>
+
+            <label>
+                <input type="radio" name="income" value="50001-100000">
+                $50,001 - $100,000
+            </label>
+
+            <label>
+                <input type="radio" name="income" value="100000+">
+                $100,000+
+            </label>
+        </div>
+
+        <div class="question">
+            <p>Gender Identity</p>
+
+            <label>
+                <input type="radio" name="gender" value="male">
+                Male
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="female">
+                Female
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="nonbinary">
+                Nonbinary
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="other">
+                Other
+            </label>
+        </div>
+
+        <div class="question">
+            <p>
+                Which of the following products have your purchased
+                in the last 2 months. Please check all that apply.
+            </p>
+
+            <label>
+                <input type="checkbox" name="product" value="product1">
+                Product 1
+            </label>
+
+            <label>
+                <input type="checkbox" name="product" value="product2">
+                Product 2
+            </label>
+
+            <label>
+                <input type="checkbox" name="product" value="product3">
+                Product 3
+            </label>
+        </div>
+
+        <div class="question">
+            <p>How often would you use our new product?</p>
+
+            <label>
+                <input type="radio" name="frequency" value="daily">
+                Daily
+            </label>
+
+            <label>
+                <input type="radio" name="frequency" value="weekly">
+                Weekly
+            </label>
+        </div>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</div>
+
+</body>
+</html>
