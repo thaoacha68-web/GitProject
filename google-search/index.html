@@ -1,16 +1,38 @@
-<section class="profile">
-    <img src="avatar.jpg" alt="Ảnh đại diện" class="avatar">
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhúng CSS vào HTML</title>
 
-    <h2>Giới thiệu bản thân</h2>
+    <!-- Phần 2: Internal CSS -->
+    <style>
+        .internal {
+            color: blue;
+        }
+    </style>
+</head>
 
-    <p>
-        Xin chào! Tôi là <strong>Thảo A Cha</strong>,
-        một sinh viên yêu thích công nghệ và lập trình.
+<body>
+
+    <h1>Thực hành nhúng CSS vào HTML</h1>
+
+    <!-- Phần 1: Inline CSS -->
+    <p style="color: red;">
+        Phần 1: Đây là đoạn văn sử dụng Inline CSS.
     </p>
 
-    <p>
-        Tôi đang học HTML, CSS, JavaScript và Git/GitHub.
-        Tôi mong muốn phát triển kỹ năng lập trình và xây dựng
-        những sản phẩm hữu ích.
+    <!-- Phần 2: Internal CSS -->
+    <p class="internal">
+        Phần 2: Đây là đoạn văn sử dụng Internal CSS.
     </p>
-</section>
+
+    <!-- Phần 3: CSS bên ngoài -->
+    <p class="external">
+        Phần 3: Đây là đoạn văn sử dụng CSS bên ngoài.
+    </p>
+
+</body>
+</html>
+```
