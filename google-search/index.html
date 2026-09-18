@@ -1,54 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-<style>
-ul.a {
-  list-style-type: circle;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành Bảng trong CSS</title>
 
-ul.b {
-  list-style-type: square;
-}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
 
-ol.c {
-  list-style-type: upper-roman;
-}
+        h1 {
+            color: darkblue;
+        }
 
-ol.d {
-  list-style-type: lower-alpha;
-}
-</style>
+        table {
+            width: 100%;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 12px;
+        }
+
+        th {
+            height: 50px;
+            background-color: lightblue;
+            color: darkblue;
+            text-align: left;
+        }
+
+        td {
+            text-align: left;
+            vertical-align: bottom;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 
 <body>
 
-<h2>Danh sách không có thứ tự</h2>
+    <h1>Bảng trong CSS</h1>
 
-<ul class="a">
-  <li>Cà phê</li>
-  <li>Trà</li>
-  <li>Sữa</li>
-</ul>
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Họ và tên</th>
+            <th>Môn học</th>
+            <th>Điểm</th>
+        </tr>
 
-<ul class="b">
-  <li>Cà phê</li>
-  <li>Trà</li>
-  <li>Sữa</li>
-</ul>
+        <tr>
+            <td>1</td>
+            <td>Nguyễn Văn A</td>
+            <td>HTML</td>
+            <td>9</td>
+        </tr>
 
-<h2>Danh sách có thứ tự</h2>
+        <tr>
+            <td>2</td>
+            <td>Trần Thị B</td>
+            <td>CSS</td>
+            <td>8</td>
+        </tr>
 
-<ol class="c">
-  <li>Cà phê</li>
-  <li>Trà</li>
-  <li>Sữa</li>
-</ol>
-
-<ol class="d">
-  <li>Cà phê</li>
-  <li>Trà</li>
-  <li>Sữa</li>
-</ol>
+        <tr>
+            <td>3</td>
+            <td>Lê Văn C</td>
+            <td>JavaScript</td>
+            <td>9.5</td>
+        </tr>
+    </table>
 
 </body>
 </html>
