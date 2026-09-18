@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Form đăng ký học viên</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .form-container {
+            width: 450px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+        }
+
+        h2 {
+            text-align: center;
+            color: blue;
+        }
+
+        label {
+            display: inline-block;
+            width: 120px;
+            margin-bottom: 12px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select {
+            width: 250px;
+            padding: 5px;
+            margin-bottom: 8px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 8px 15px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Đăng ký học viên</h2>
+
+        <form action="#" method="post">
+            <label for="fullname">Họ và tên:</label>
+            <input type="text" id="fullname" name="fullname">
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone">
+            <br>
+
+            <label for="birthday">Ngày sinh:</label>
+            <input type="date" id="birthday" name="birthday">
+            <br>
+
+            <label for="gender">Giới tính:</label>
+            <select id="gender" name="gender">
+                <option value="male">Nam</option>
+                <option value="female">Nữ</option>
+            </select>
+            <br>
+
+            <label for="course">Khóa học:</label>
+            <select id="course" name="course">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </select>
+            <br>
+
+            <div class="buttons">
+                <input type="submit" value="Đăng ký">
+                <input type="reset" value="Nhập lại">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+      
