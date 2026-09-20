@@ -1,0 +1,90 @@
+/* 1. Đổi màu nền của trang (Element Selector) */
+body {
+    background-color: #f4f7f6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* 2. Căn giữa tiêu đề <h1> (ID Selector) */
+#main-title {
+    text-align: center;
+    color: #1a5276;
+    margin-top: 20px;
+}
+
+/* Định dạng đoạn văn mô tả bản thân (Class Selector) */
+.description {
+    text-align: center;
+    max-width: 600px;
+    margin: 15px auto 30px auto;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Khung chứa sở thích */
+.hobbies-container {
+    max-width: 400px;
+    margin: 0 auto 30px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Căn chỉnh Grouping Selector cho các thẻ tiêu đề nhỏ */
+.hobbies-container h2 {
+    color: #2c3e50;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+/* 3. Định dạng danh sách với màu sắc khác nhau (Class Selector) */
+.hobby-list {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.hobby-item {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Màu sắc riêng biệt cho từng sở thích */
+.hobby-item.coding {
+    color: #e74c3c; /* Màu đỏ */
+}
+
+.hobby-item.music {
+    color: #27ae60; /* Màu xanh lá */
+}
+
+.hobby-item.travel {
+    color: #8e44ad; /* Màu tím */
+}
+
+/* Căn giữa nút bấm */
+.button-container {
+    text-align: center;
+}
+
+/* Định dạng nút bấm ban đầu */
+.my-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* 4. Sử dụng hover effect cho nút bấm (Pseudo-class Selector :hover) */
+.my-btn:hover {
+    background-color: #1d6fa5; /* Đổi màu nền tối hơn khi di chuột vào */
+    transform: scale(1.05);     /* Phóng to nhẹ nút bấm */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
